@@ -1,13 +1,16 @@
 import React from "react"
+import { useRedux } from "./state/useRedux"
 import FrostApp from "frost"
 import Drought from "drought"
+import Dashboard from "dashboard"
 
 const App = () => {
+  const [state, dispatch] = useRedux()
   return (
     <div>
-      <h1> hello App gglob </h1>
+      <Dashboard {...{ state, dispatch }} />
       <FrostApp />
-      <Drought />
+      <Drought {...{ state, dispatch }} />
     </div>
   )
 }

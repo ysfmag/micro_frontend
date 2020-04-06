@@ -1,10 +1,8 @@
 import React from "react"
-import { useRedux } from "./state/useRedux"
 import { AppContext } from "./context"
 import App from "./App"
 
-function Root() {
-  const [state, dispatch] = useRedux()
+function Root({ state, dispatch }) {
   return (
     <AppContext.Provider
       value={{

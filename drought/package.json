@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dev-server --open  --mode  development",
     "build": "webpack --mode production --config webpack.build.config.js",
-    "build:watcher": "webpack --watch --mode development   "
+    "build:watcher": "webpack --watch --mode development   ",
+    "fix:react": "npm link ../global-pricing-app/node_modules/react"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

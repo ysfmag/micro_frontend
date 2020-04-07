@@ -1,12 +1,12 @@
-const path = require("path");
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const path = require("path")
+const HtmlWebPackPlugin = require("html-webpack-plugin")
 
 module.exports = {
   entry: "./src/index.js",
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
-    port: 5000
+    port: 5002
   },
   output: {
     filename: "[hash].[name].js",
@@ -42,4 +42,4 @@ module.exports = {
       filename: "index.html"
     })
   ]
-};
+}

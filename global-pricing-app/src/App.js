@@ -3,6 +3,7 @@ import { useRedux } from "./state/useRedux"
 import FrostApp from "frost"
 import Drought from "drought"
 import Dashboard from "dashboard"
+import Cyclone from "./x-component/cyclone"
 import Button from "my-button"
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <Dashboard {...{ state, dispatch }} />
       <FrostApp />
       <Drought {...{ state, dispatch }} />
+      <Cyclone />
     </div>
   )
 }

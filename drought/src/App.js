@@ -2,6 +2,7 @@ import React, { useContext } from "react"
 import withCounterModule from "./hooks/withCounterModule"
 import Counter from "./components/Counter"
 import { AppContext } from "./context"
+import Button from "my-button"
 
 const App = () => {
   const { state } = useContext(AppContext)

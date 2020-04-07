@@ -1,0 +1,16 @@
+{
+  "name": "my-button",
+  "version": "1.0.0",
+  "main": "dist/button.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build button.js ",
+    "fix:react": "npm link ../global-pricing-app/node_modules/react"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-to-webcomponent": "^1.4.0"
+  }
+}

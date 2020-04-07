@@ -13,7 +13,7 @@ module.exports = {
       react: path.resolve("node_modules/react")
     }
   },
-  externals: ["react", "react-dom"],
+  externals: ["react", "react-dom", "my-button"],
   module: {
     rules: [
       {

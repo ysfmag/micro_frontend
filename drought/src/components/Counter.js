@@ -1,6 +1,7 @@
 import React, { useContext } from "react"
 import * as actions from "../state/actions"
 import { AppContext } from "../context"
+import AppButton from "./Button"
 const styles = {
   container: {
     width: "100%",
@@ -24,22 +25,21 @@ const Counter = () => {
   return (
     <div style={styles.container}>
       <h3> counter value : {counter}</h3>
-      <button
+      <AppButton
+        name="+1"
         style={styles.button}
         onClick={() => {
           dispatch(actions.increment())
         }}
-      >
-        + 1
-      </button>
-      <button
+      />
+
+      <AppButton
+        name="-1"
         style={styles.button}
         onClick={() => {
           dispatch(actions.decrement())
         }}
-      >
-        - 1
-      </button>
+      />
     </div>
   )
 }

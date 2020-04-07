@@ -10,6 +10,7 @@ const App = () => {
 
   return (
     <div>
+      <my-header title="Welcome to the App Pricing"></my-header>
       <Dashboard {...{ state, dispatch }} />
       <FrostApp />
       <Drought {...{ state, dispatch }} />
